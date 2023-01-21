@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.tovar{
+    display: flex;
+    width: 250px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #d8d8d8;
+}
+.tovar img{
+    width: 80%;
+    transition: .4s;
+}
+.tovar:hover img{
+    transform: scale(1.16);
+}
+.tovar h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.tovar p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(55, 54, 54)
+}
+.tovar span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #213547;;
+}

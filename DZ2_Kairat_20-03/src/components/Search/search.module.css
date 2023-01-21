@@ -1,0 +1,79 @@
+form {
+    display: flex;
+    /* max-width: 600px; */
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 60px 0;
+}
+form input{
+    outline: none;
+    width: 400px;
+    height: 60px;
+    padding: 5px 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    background: #3f808b;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+input::placeholder{
+    color: rgb(173, 168, 168);
+}
+input:focus{
+    background: #2b6069;
+    width: 500px;
+}
+form button{
+    font-size: 28px;
+    padding: 0 15px;
+    border: none;
+    background: rgb(68, 103, 110);
+    transition: .3s;
+    cursor: pointer;
+}
+form button:hover{
+    font-size: 32px;
+    background: rgb(131, 181, 192);
+}
+.header{
+    margin: 0 auto;
+    max-width: 820px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.header .logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+@media (max-width: 815px) {
+    form input{
+        width: 270px;
+    }
+    input:focus{
+        width: 350px;
+    }
+    .header .logo{
+        width: 120px;
+    }
+}
+@media (max-width:660px) {
+    .header .logo{
+        display: none;
+    }
+    .header{
+        justify-content: center;
+    }
+    form input{
+        width: 90%;
+    }
+    form input:focus{
+        width: 120%;
+    }
+}
